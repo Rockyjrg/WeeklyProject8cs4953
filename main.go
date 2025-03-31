@@ -8,7 +8,7 @@ func main() {
 	rl.InitWindow(800, 400, "Practice for midterm and Game Jam.")
 
 	defer rl.CloseWindow()
-	player := InitCreature("Bobby", 8, 10, rl.NewVector2(100, 100))
+	player := NewCreature(50, 10, rl.NewVector2(30, 30))
 
 	for !rl.WindowShouldClose() {
 		rl.BeginDrawing()
