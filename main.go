@@ -29,6 +29,9 @@ func main() {
 		if rl.IsKeyDown(rl.KeyD) {
 			player.MoveCreature(20, 0)
 		}
+		if rl.IsKeyPressed(rl.KeySpace) {
+			player.Pos.Y += 10
+		}
 
 		rl.EndDrawing()
 	}

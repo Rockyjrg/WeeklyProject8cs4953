@@ -32,3 +32,7 @@ func (c *Creature) MoveCreature(xpos, ypos float32) {
 		c.Pos.Y = float32(rl.GetScreenHeight()) - c.Size
 	}
 }
+
+func (c *Creature) FlipCreature() {
+	c.Pos.Y += 10
+}
